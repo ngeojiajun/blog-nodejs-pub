@@ -1,0 +1,11 @@
+node_modules
+#prevent posts to be leaked through git
+posts/*
+public/imgs/*
+posts.json
+#output folder
+output/*
+#internal strings
+locales/ja.js
+#for debugging use only
+update-posts.js

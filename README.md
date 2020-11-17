@@ -1,6 +1,6 @@
 This is the public repo for the blog engine used my blog
 
-Usage:
+Installation:
 ```
 git clone https://github.com/ngeojiajun/blog-nodejs-pub/
 cd blog-nodejs-pub
@@ -17,5 +17,11 @@ A valid posts will have following format
 <content>
 #end
 ```
+
+To generate the page:
+```
+node index
+```
+A folder named `output` with the html files will be produced.
 
 MORE DESCRIPTION IN FUTURE

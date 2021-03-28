@@ -20,6 +20,9 @@ async function loadFolders(name,id){
     queue.push(parseFile(`${name}/${file}.txt`)
                 .then(x=>{x.pageTags=undefined;return x;})
                 .then(x=>{
+                  if(x.properties.hide==="yes"){
+                    return;
+                  }
                   x.path=`${name}/${file}.txt`.replace(/\/\//g,"/");
                   if(posts[file]!==undefined)file=`${id}-${file}`;
                   if(rules[id]!==undefined){

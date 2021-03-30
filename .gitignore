@@ -9,3 +9,4 @@ output/*
 locales/ja.js
 #for debugging use only
 update-posts.js
+.netlify

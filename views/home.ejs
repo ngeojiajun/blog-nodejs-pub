@@ -75,9 +75,9 @@
       </div>
       <% }else if(post.pageTags[i].type==="image"){%>
       <div>
-      <img alt=<%= post.pageTags[i].alt %> src="<%= post.pageTags[i].url %>"
-        class="rounded img-fluid <%= post.pageTags[i].style["class"]||"" %>" style="<%= page.expandTag(post.pageTags[i].style) %>"/><br/>
-        <%= post.pageTags[i].caption?post.pageTags[i].alt:"" %>
+      <%= post.pageTags[i].caption?post.pageTags[i].alt+":":"" %><br/>
+      <img alt="<%= post.pageTags[i].alt %>" src="<%= post.pageTags[i].url %>"
+        class="rounded img-fluid <%= post.pageTags[i].style["class"]||"" %>" style="<%= page.expandTag(post.pageTags[i].style) %>"/>
       </div>
       <% } %>
       <% } %>
